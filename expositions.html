@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expositions - Christ Denisa</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/expositions.css">
+</head>
+
+<body>
+    <!-- Header (identique à index.html) -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Christ Denisa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerie.html">Galerie</a>
+                        </li>
+                        <li class="nav-item active" >
+                            <a class="nav-link" href="#expositions">Expositions</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section vidéo en arrière-plan avec titre et intro -->
+    <section class="video-section">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop id="bg-video">
+            <source src="assets/videos/cover.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <div class="content">
+            <h1>Mes Expositions</h1>
+            <p>Découvrez mes expositions les plus récentes à travers cette collection de moments capturés.</p>
+        </div>
+    </section>
+
+    <!-- Quatre sections avec carrousels et grilles de photos -->
+<div class="container mt-5">
+    <section class="artwork-section" id="expo1">
+        <h2>PICASSO REMIX 2022</h2>
+        <!-- Carrousel -->
+        <div id="carouselExpo1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/picasso1.jpg" class="d-block w-100" alt="Exposition 1 Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/picasso2.jpg" class="d-block w-100" alt="Exposition 1 Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/picasso3.jpg" class="d-block w-100" alt="Exposition 1 Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExpo1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExpo1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+
+        <!-- Bouton pour voir plus -->
+        <button id="show-grid-expo1" class="btn btn-primary mt-4">Voir plus</button>
+
+        <!-- Grille de photos (cachée au départ) -->
+        <div id="photo-grid-expo1" class="grid-photos mt-4" style="display: none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/picasso1.jpg" class="img-fluid" alt="Exposition 1 Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/picasso2.jpg" class="img-fluid" alt="Exposition 1 Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/picasso3.jpg" class="img-fluid" alt="Exposition 1 Image 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/picasso4.jpg" class="img-fluid" alt="Exposition 1 Image 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/picasso5.jpg" class="img-fluid" alt="Exposition 1 Image 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/picasso6.jpg" class="img-fluid" alt="Exposition 1 Image 6">
+                </div>
+            </div>
+        </div>
+
+        <button id="hide-grid-expo1" class="btn btn-primary mt-4" style="display: none;">Voir moins</button>
+    </section>
+
+    <section class="artwork-section" id="expo2">
+        <h2>The first fashion night organized by domaf</h2>
+        <!-- Carrousel -->
+        <div id="carouselExpo2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/domaf1.jpg" class="d-block w-100" alt="Exposition 2 Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/domaf2.jpg" class="d-block w-100" alt="Exposition 2 Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/domaf3.jpg" class="d-block w-100" alt="Exposition 2 Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExpo2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExpo2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+
+        <!-- Bouton pour voir plus -->
+        <button id="show-grid-expo2" class="btn btn-primary mt-4">Voir plus</button>
+
+        <!-- Grille de photos (cachée au départ) -->
+        <div id="photo-grid-expo2" class="grid-photos mt-4" style="display: none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/domaf1.jpg" class="img-fluid" alt="Exposition 2 Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/domaf2.jpg" class="img-fluid" alt="Exposition 2 Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/domaf3.jpg" class="img-fluid" alt="Exposition 2 Image 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/domaf4.jpg" class="img-fluid" alt="Exposition 2 Image 4">
+                </div>
+            </div>
+        </div>
+
+        <button id="hide-grid-expo2" class="btn btn-primary mt-4" style="display: none;">Voir moins</button>
+    </section>
+
+    <section class="artwork-section" id="expo3">
+        <h2>THE DOUALA ART FAIR 2022</h2>
+        <!-- Carrousel -->
+        <div id="carouselExpo3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/douala1.jpg" class="d-block w-100" alt="Exposition 3 Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/douala2.jpg" class="d-block w-100" alt="Exposition 3 Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/douala3.jpg" class="d-block w-100" alt="Exposition 3 Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExpo3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExpo3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+
+        <!-- Bouton pour voir plus -->
+        <button id="show-grid-expo3" class="btn btn-primary mt-4">Voir plus</button>
+
+        <!-- Grille de photos (cachée au départ) -->
+        <div id="photo-grid-expo3" class="grid-photos mt-4" style="display: none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/douala1.jpg" class="img-fluid" alt="Exposition 3 Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/douala2.jpg" class="img-fluid" alt="Exposition 3 Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/douala3.jpg" class="img-fluid" alt="Exposition 3 Image 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/douala4.jpg" class="img-fluid" alt="Exposition 3 Image 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/douala5.jpg" class="img-fluid" alt="Exposition 3 Image 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/douala6.jpg" class="img-fluid" alt="Exposition 3 Image 6">
+                </div>
+            </div>
+        </div>
+
+        <button id="hide-grid-expo3" class="btn btn-primary mt-4" style="display: none;">Voir moins</button>
+    </section>
+
+    <section class="artwork-section" id="expo4">
+        <h2>Artworks by <a href="https://www.instagram.com/keulion/" class="credit">keulion</a>, <a href="https://www.instagram.com/ndibafranco/" class="credit">ndibafranco</a> and <a href="https://www.instagram.com/if_cameroun/" class="credit">IF Cameroon</a></h2>
+        <!-- Carrousel -->
+        <div id="carouselExpo4" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/credit1.jpg" class="d-block w-100" alt="Exposition 4 Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/credit2.jpg" class="d-block w-100" alt="Exposition 4 Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/credit3.jpg" class="d-block w-100" alt="Exposition 4 Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExpo4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExpo4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+
+        <!-- Bouton pour voir plus -->
+        <button id="show-grid-expo4" class="btn btn-primary mt-4">Voir plus</button>
+
+        <!-- Grille de photos (cachée au départ) -->
+        <div id="photo-grid-expo4" class="grid-photos mt-4" style="display: none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/credit1.jpg" class="img-fluid" alt="Exposition 4 Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/credit2.jpg" class="img-fluid" alt="Exposition 4 Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/credit3.jpg" class="img-fluid" alt="Exposition 4 Image 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/credit4.jpg" class="img-fluid" alt="Exposition 4 Image 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/credit5.jpg" class="img-fluid" alt="Exposition 4 Image 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/credit6.jpg" class="img-fluid" alt="Exposition 4 Image 6">
+                </div>
+            </div>
+        </div>
+
+        <button id="hide-grid-expo4" class="btn btn-primary mt-4" style="display: none;">Voir moins</button>
+    </section>
+</div>
+
+
+
+<!-- Formulaire de Contact avec AOS animation -->
+<section id="contact" data-aos="fade-up">
+    <h3>Contactez-moi</h3>
+    <form>
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+    
+
+     <!-- Footer -->
+     <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/christ_denisa/" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Conçu par <a href="https://www.websnape.de">Websnape</a></p>
+    </footer>
+
+    <!-- Bootstrap JS, AOS JS, jQuery, Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/expositions.js"></script>
+
+    <script>
+        // Initialisation d'AOS
+        AOS.init({
+            duration: 1000,
+            offset: 120,
+            once: true
+        });
+    </script>
+
+      <!-- Bouton Retour en haut -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Retour en haut">&#8679;</button>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Christ Denisa</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/galerie.css">
+</head>
+
+<body>
+    <!-- Header (identique à index.html) -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Christ Denisa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="galerie.html">Galerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="expositions.html">Expositions</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Boutons de basculement entre Photos et Vidéos -->
+    <div class="container text-center mt-4" id="switch">
+        <button id="show-photos" class="btn btn-primary">Mon art en images</button>
+        <button id="show-videos" class="btn btn-secondary">Vidéos de mon travail</button>
+    </div>
+
+    <!-- Section Galerie Photos -->
+    <section id="photo-gallery" class="gallery-section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center">Galerie d'Art</h2>
+            <p class="text-center description " id="desc">Plongez dans mon univers artistique à travers cette sélection de mes œuvres favorites.</p>
+
+            <!-- Grille des images -->
+            <div class="row gallery">
+                <!-- 9 photos -->
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art1.jpg" alt="Art 1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art2.jpg" alt="Art 2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art3.jpg" alt="Art 3" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art4.jpg" alt="Art 4" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art5.jpg" alt="Art 5" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art6.jpg" alt="Art 6" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art7.jpg" alt="Art 7" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="assets/img/art8.jpg" alt="Art 8" class="img-fluid">
+                    </div>
+                </div>
+               
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Section Vidéos (initialement masquée) -->
+    <section id="video-gallery" class="gallery-section" style="display: none;" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" >Galerie Vidéos</h2>
+            <p class="text-center description" id="descvid">Découvrez mes vidéos artistiques.</p>
+
+            <!-- Grille des vidéos -->
+            <div class="row gallery">
+                <div class="col-md-4">
+                    <div class="video-item">
+                        <video controls class="img-fluid">
+                            <source src="assets/videos/vid1.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la balise vidéo.
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="video-item">
+                        <video controls class="img-fluid">
+                            <source src="assets/videos/vid2.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la balise vidéo.
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="video-item">
+                        <video controls class="img-fluid">
+                            <source src="assets/videos/vid3.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la balise vidéo.
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="video-item">
+                        <video controls class="img-fluid">
+                            <source src="assets/videos/vid4.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la balise vidéo.
+                        </video>
+                    </div>
+                </div>
+                <!-- Ajoutez plus de vidéos si nécessaire -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="artwork-section">
+        <div class="container text-center">
+            <h2 class="text-center">Je suis une muse</h2>
+            <p id="desc2">Ma plus belle œuvre d'art reste moi-même</p>
+    
+            <!-- Carrousel -->
+            <div id="carouselArt" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/me1.jpg" class="d-block w-100" alt="Oeuvre 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/me2.jpg" class="d-block w-100" alt="Oeuvre 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/me4.jpg" class="d-block w-100" alt="Oeuvre 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselArt" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselArt" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
+    
+            <!-- Boutons Voir plus et Voir moins -->
+            <button id="show-grid" class="btn btn-primary mt-4">Voir plus</button>
+            
+    
+            <!-- Grille de photos (cachée au départ) -->
+            <div id="photo-grid" class="grid-photos mt-4" style="display: none;">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <img src="assets/img/me1.jpg" class="img-fluid" alt="Oeuvre 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me2.jpg" class="img-fluid" alt="Oeuvre 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me4.jpg" class="img-fluid" alt="Oeuvre 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me3.jpg" class="img-fluid" alt="Oeuvre 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me5.jpg" class="img-fluid" alt="Oeuvre 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me6.jpg" class="img-fluid" alt="Oeuvre 3">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me7.jpg" class="img-fluid" alt="Oeuvre 4">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me8.jpg" class="img-fluid" alt="Oeuvre 5">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/me9.jpg" class="img-fluid" alt="Oeuvre 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="hide-grid" class="btn btn-primary mt-4" style="display: none;">Voir moins</button>
+    </section>
+    
+    
+    <!-- Formulaire de Contact avec AOS animation -->
+    <section id="contact" data-aos="fade-up">
+        <h3>Contactez-moi</h3>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/christ_denisa/" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Conçu par <a href="https://www.websnape.de">Websnape</a></p>
+    </footer>
+
+    <!-- Bootstrap JS, AOS JS, jQuery, Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/galerie.js"></script>
+
+    <script>
+        // Initialisation d'AOS
+        AOS.init({
+            duration: 1000, // Durée des animations
+            offset: 120, // Distance de défilement avant le déclenchement
+            once: true // Animation ne se joue qu'une seule fois
+        });
+    </script>
+
+      <!-- Bouton Retour en haut -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Retour en haut">&#8679;</button>
+</body>
+
+</html>

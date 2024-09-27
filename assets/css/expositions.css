@@ -1,0 +1,445 @@
+/* Style général */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #fdf8f3; /* Blanc cassé */
+    color: #5d4037; /* Marron terreux */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Effet de défilement doux */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #5d4037;
+    color: #fdf8f3;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #d7c3af; /* Marron clair */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #8b5e3c; /* Changement de couleur au survol */
+}
+
+header h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #fdf8f3;
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #d7c3af; /* Changement de couleur au survol */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+nav ul li a {
+    font-family: 'Courier New', monospace;
+    color: #d7c3af;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d7c3af;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #fdf8f3;
+}
+
+/* Header sticky */
+.custom-navbar {
+    background-color: #5d4037; /* Couleur marron */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #d7c3af; /* Bordure en bas pour un effet visuel */
+}
+
+/* Toggle button personnalisé */
+.navbar-toggler {
+    border-color: #fdf8f3; /* Bordure blanche pour plus de contraste */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28%255%2C255%2C255%2C1%29" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Icône blanche */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #5d4037;
+    color: #fdf8f3;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+    border-top: 5px solid #d7c3af; /* Ajout d'une bordure */
+}
+
+footer p {
+    font-size: 1em;
+    color: #d7c3af;
+    margin-bottom: 0.5em;
+    transition: color 0.3s ease;
+}
+
+footer p:hover {
+    color: #fdf8f3; /* Changement de couleur au survol */
+}
+
+footer a {
+    color: #fdf8f3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les icônes des réseaux sociaux */
+.social {
+    margin: 1em 0;
+}
+
+.social a {
+    color: #fdf8f3;
+    margin: 0 10px;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #d7c3af;
+}
+
+
+/* Section vidéo */
+.video-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdf8f3;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+
+/* Section "Exposition" */
+.artwork-section {
+    padding: 4em 2em;
+    background-color: #fdf8f3;
+    text-align: center;
+}
+
+.artwork-section h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5em;
+    color: #5d4037;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+.credit{
+    text-decoration: none;
+    color: #5d4037;
+}
+
+/* Carrousel style */
+.carousel-item img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #5d4037;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #8b5e3c;
+}
+
+/* Grille de photos */
+.grid-photos .col-md-4 {
+    margin-bottom: 1em;
+}
+
+.grid-photos img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons */
+#show-grid-expo1, #hide-grid-expo1 {
+    background-color: #5d4037;
+    color: #fdf8f3;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+#show-grid-expo1:hover, #hide-grid-expo1:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons */
+#show-grid-expo2, #hide-grid-expo2 {
+    background-color: #5d4037;
+    color: #fdf8f3;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+#show-grid-expo2:hover, #hide-grid-expo2:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons */
+#show-grid-expo3, #hide-grid-expo3 {
+    background-color: #5d4037;
+    color: #fdf8f3;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+#show-grid-expo3:hover, #hide-grid-expo3:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons */
+#show-grid-expo4, #hide-grid-expo4 {
+    background-color: #5d4037;
+    color: #fdf8f3;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+#show-grid-expo4:hover, #hide-grid-expo4:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Contact */
+#contact {
+    padding: 4em 2em;
+    background-color: #d7c3af;
+    text-align: center;
+}
+
+#contact h3 {
+    font-family: 'Courier New', monospace;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #5d4037;
+    text-transform: uppercase;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#contact label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #5d4037;
+}
+
+#contact input, #contact textarea {
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border: 2px dashed #5d4037;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fdf8f3;
+    font-size: 1.1em;
+    outline: none;
+}
+
+#contact button {
+    background-color: #5d4037;
+    color: #fdf8f3;
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact button:hover {
+    background-color: #8b5e3c;
+    transform: translateY(-3px);
+}
+
+
+@media (max-width: 480px) {
+
+    #contact h3 {
+        font-size: 1.8em;
+    }
+
+    #contact label {
+        font-size: 0.9em;
+    }
+  /* Section vidéo */
+.video-section {
+    margin-top: 10%;
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdf8f3;
+    font-size: 0.8em;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.artwork-section h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.8em;
+    color: #5d4037;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+}
+
+
+/* Bouton Retour en haut */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 50px; /* Taille égale pour largeur et hauteur */
+    height: 50px;
+    background-color: #5d4037; /* Couleur marron */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Rend le bouton parfaitement rond */
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Ajout de transition pour un effet smooth */
+    display: none; /* Caché par défaut */
+}

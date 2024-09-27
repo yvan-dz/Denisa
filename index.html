@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denisa</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+      <!-- Header (identique à index.html) -->
+      <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Christ Denisa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerie.html">Galerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="expositions.html">Expositions</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section de Bienvenue avec AOS animation -->
+    <section id="accueil" class="welcome" data-aos="fade-up">
+        <img src="assets/img/photo1.jpg" alt="Portrait de l'artiste">
+        <div class="intro">
+            <h2>Bienvenue dans mon univers artistique</h2>
+            <p>“L'art est une fenêtre sur l'âme et une exploration de l'esprit.”</p>
+        </div>
+    </section>
+
+    <!-- Présentation rapide avec AOS animation -->
+    <section class="about" data-aos="fade-left">
+        <h3>À propos de Denisa</h3>
+        <p>Denisa est une peintre et photographe passionnée, explorant des thèmes variés allant de la nature aux émotions humaines. Elle a exposé dans plusieurs galeries...</p>
+    </section>
+
+    <!-- Commandes personnalisées avec AOS animation -->
+    <section id="services" data-aos="zoom-in">
+        <h3>Commandes Personnalisées</h3>
+        <p>Je propose des œuvres uniques, créées sur mesure selon vos souhaits, qu'il s'agisse de peintures ou de photographies personnalisées.</p>
+        <button class="custom-button"><a href="#contact" class="button-link">Contactez-moi pour une commande</a></button>
+    </section>
+
+    <!-- Section Image en arrière-plan avec AOS animation -->
+    <section id="image-bg" class="background-section" data-aos="fade-in">
+        <div class="overlay">
+            <h3>Mon Univers Images</h3>
+            <p>Découvrez mon univers artistique à travers des œuvres immersives.</p>
+            <button class="galerie-button"><a href="galerie.html" class="button-link">Decouvrez ma galerie</a></button>
+        </div>
+    </section>
+
+    <!-- Formulaire de Contact avec AOS animation -->
+    <section id="contact" data-aos="fade-up">
+        <h3>Contactez-moi</h3>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/christ_denisa/" class="social-icon"><i class="fab fa-instagram"></i></a>
+         
+        </div>
+        <p>Conçu par <a href="https://www.websnape.de">Websnape</a></p>
+    </footer>
+
+    <!-- Bootstrap JS, AOS JS, jQuery, Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Initialisation d'AOS
+        AOS.init({
+            duration: 1000, // Durée des animations
+            offset: 120, // Distance de défilement avant le déclenchement
+            once: true // Animation ne se joue qu'une seule fois
+        });
+    </script>
+
+    <!-- Bouton Retour en haut -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Retour en haut">&#8679;</button>
+
+</body>
+
+</html>
